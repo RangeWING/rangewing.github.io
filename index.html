@@ -17,10 +17,17 @@
         <style>
             .pub-title {
                 font-size: 20px;
-                font-weight: bold;
+                font-weight: 500;
             }
             .pub-item {
                 padding-left: 10px;
+            }
+            span.news-date {
+                font-weight: 500;
+                padding-right: 0.25em;
+            }
+            span.my-name {
+                font-weight: 500;
             }
             a {
                 color: rgb(33, 37, 41)!important;
@@ -32,42 +39,54 @@
     </head>
     <body>
         <!-- Page Content-->
-        <div class="container px-4 px-lg-5">
+        <div class="container px-4 px-lg-6 py-lg-5">
             <!-- Heading Row-->
             <div class="row gx-4 gx-lg-5 align-items-center my-5">
                 <div class="col-lg-4"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://placehold.co/500x300" alt="..." /></div>
                 <div class="col-lg-8">
-                    <h1 class="font-weight-light">Younggeol Cho</h1>
+                    <h2 class="font-weight-light">Younggeol Cho</h2>
                     <p>
-                        I am a research intern at Visual Computing Lab, Seoul National University.<br>
-                        Research interests: Computer Vision, Robotics, Cyber-Physical System<br>
+                        I am a research intern at Visual Computing Lab, Seoul National University. 
+                        I was a research officer at Agency for Defense Development (ADD). 
+                        I received my M.S. and B.S. in Computer Science at Korea Advanced Institute of Science and Technology (KAIST).
+                        My research interests are Computer Vision, Robotics and Cyber-Physical System.<br>
                         Email: yglcho@snu.ac.kr
+                    </p>
+                    <p class="mb-0">
+                        <a role="button" class="btn btn-sm btn-light" href="https://cv.ygcho.com/">
+                            <i class="fa-regular fa-file-lines"></i>
+                            Full CV
+                        </a>
+                        <a role="button" class="btn btn-sm btn-light" href="https://scholar.google.com/citations?user=YExTU_cAAAAJ&hl=ko">
+                            <i class="fa-brands fa-google-scholar"></i>
+                            Google Scholar
+                        </a>
                     </p>
                     <!-- <a class="btn btn-primary" href="#!">Call to Action!</a> -->
                     <!-- <a class="btn btn-primary" href="https://"></a> -->
                 </div>
             </div>
             <div class="row">
-                <h2>News</h2>
+                <h3>News</h3>
                 <div>
                     <ul>
-                        <li><b>Sep. 2024</b>&nbsp; One paper got accepted to ECCV Workshop 2024.</li>
-                        <li><b>Aug. 2024</b>&nbsp; Joined SNU Visual Computing Lab.</li>
-                        <li><b>Aug. 2024</b>&nbsp; I got my Master's degree in Computer Science at KAIST.</li>
-                        <li><b>Jul. 2024</b>&nbsp; One paper got accepted to ECCV 2024.</li>
+                        <li><span class="news-date">Sep. 2024</span> One paper got accepted to ECCV Workshop 2024.</li>
+                        <li><span class="news-date">Aug. 2024</span> Joined SNU Visual Computing Lab.</li>
+                        <li><span class="news-date">Aug. 2024</span> I got my Master's degree in Computer Science at KAIST.</li>
+                        <li><span class="news-date">Jul. 2024</span> One paper got accepted to ECCV 2024.</li>
                     </ul>
                 </div>
             </div>
             <p></p>
             <div class="row">
-                <h2>Publications</h2>
+                <h3>Publications</h3>
                 <div class="row align-items-center pub-row mb-4">
                     <div class="col-lg-3 pub-img">
                         <img class="img-fluid rounded mb-4 mb-lg-0" src="assets/mw_figure.webp" alt="..." />
                     </div>
                     <div class="col-lg-9 pub-item">
                         <div class="pub-title">MetaWeather: Few-Shot Weather-Degraded Image Restoration</div>
-                        <div class="pub-author">Youngrae Kim*, <b>Younggeol Cho*</b>, Thanh-Tung Nguyen, Dongman Lee (*: equal contribution)</div>
+                        <div class="pub-author">Youngrae Kim*, <span class="my-name">Younggeol Cho*</span>, Thanh-Tung Nguyen, Dongman Lee (*: equal contribution)</div>
                         <div class="pub-venue">In ECCV 2024</div>
                         <div class="pub-btns">
                             [<a href="https://rangewing.github.io/MetaWeather">Project Page</a>]
@@ -82,7 +101,7 @@
                     </div>
                     <div class="col-lg-9 pub-item">
                         <div class="pub-title">Beyond Entropy: Style Transfer Guided Single Image Continual Test-Time Adaptation</div>
-                        <div class="pub-author"><b>Younggeol Cho*</b>, Youngrae Kim*, Dongman Lee (*: equal contribution)</div>
+                        <div class="pub-author"><span class="my-name">Younggeol Cho*</span>, Youngrae Kim*, Dongman Lee (*: equal contribution)</div>
                         <div class="pub-venue">In ECCV Workshop 2024</div>
                         <div class="pub-btns">
                             <!-- [<a href="https://rangewing.github.io/MetaWeather">Project Page</a>]
@@ -97,7 +116,7 @@
                     </div>
                     <div class="col-lg-9 pub-item">
                         <div class="pub-title">GoonDAE: Denoising-Based Driver Assistance for Off-Road Teleoperation</div>
-                        <div class="pub-author"><b>Younggeol Cho</b>, Hyeonggeun Yun, Jinwon Lee, Arim Ha, Jihyeok Yun</div>
+                        <div class="pub-author"><span class="my-name">Younggeol Cho</span>, Hyeonggeun Yun, Jinwon Lee, Arim Ha, Jihyeok Yun</div>
                         <div class="pub-venue">IEEE Robotics and Automation Letters (SCIE, IF=5.2), Feb. 2023</div>
                         <!-- [<a href="https://rangewing.github.io/MetaWeather">Project Page</a>]
                         [<a href="https://github.com/RangeWING/MetaWeather">Code</a>] -->
@@ -110,7 +129,7 @@
                     </div>
                     <div class="col-lg-9 pub-item">
                         <div class="pub-title">Driving with Black Box Assistance: Teleoperated Driving Interface Design Guidelines for Computational Driver Assistance Systems in Unstructured Environments</div>
-                        <div class="pub-author">Hyeonggeun Yun, <b>Younggeol Cho</b>, Arim Ha, Jihyeok Yun</div>
+                        <div class="pub-author">Hyeonggeun Yun, <span class="my-name">Younggeol Cho</span>, Arim Ha, Jihyeok Yun</div>
                         <div class="pub-venue">In AutomotiveUI 2023</div>
                         [<a href="https://dl.acm.org/doi/10.1145/3580585.3607169">Paper</a>]
                     </div>
@@ -121,7 +140,7 @@
                     </div>
                     <div class="col-lg-9 pub-item">
                         <div class="pub-title">Generative Model-based Simulation of Driver Behavior when Using Control Input Interface for Teleoperated Driving in Unstructured Canyon Terrains</div>
-                        <div class="pub-author">Hyeonggeun Yun, <b>Younggeol Cho</b>, Jinwon Lee, Arim Ha, Jihyeok Yun</div>
+                        <div class="pub-author">Hyeonggeun Yun, <span class="my-name">Younggeol Cho</span>, Jinwon Lee, Arim Ha, Jihyeok Yun</div>
                         <div class="pub-venue">In TAROS 2023</div>
                         [<a href="https://link.springer.com/chapter/10.1007/978-3-031-43360-3_39">Paper</a>]
                     </div>
@@ -132,7 +151,7 @@
                     </div>
                     <div class="col-lg-9 pub-item">
                         <div class="pub-title">Development of an Information Security-Enforced EEG-Based Nuclear Operators’ Fitness for Duty Classification System</div>
-                        <div class="pub-author">Jung Hwan Kim, <b>Younggeol Cho</b>, Young A Suh, Man-Sung Yim</div>
+                        <div class="pub-author">Jung Hwan Kim, <span class="my-name">Younggeol Cho</span>, Young A Suh, Man-Sung Yim</div>
                         <div class="pub-venue">IEEE Access (SCIE, IF=3.9), May. 2021</div>
                         <!-- [<a href="https://rangewing.github.io/MetaWeather">Project Page</a>]
                         [<a href="https://github.com/RangeWING/MetaWeather">Code</a>] -->
@@ -184,5 +203,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="https://kit.fontawesome.com/e3bdd7e63c.js" crossorigin="anonymous"></script>
     </body>
 </html>
